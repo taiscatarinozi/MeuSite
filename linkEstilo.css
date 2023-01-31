@@ -1,0 +1,25 @@
+/*Crie uma imagem com um link que tenha
+comportamentos diferentes quando visitado
+e quando o cursor está sobre a imagem*/
+
+.imagem{
+    background: url("imagem/52CT.jpg") no-repeat;/*'no-repeat' não deixa a imagem repetir*/
+    width: 200px;
+    height: 200px;
+    display: block;
+    background-size: contain;/*Deixa a imagem toda 
+    cabendo dentro do bloco de 200 por 200 pixels*/
+    }
+
+/*pseudoclasse hover(sobrevoando), faz algo quando 
+o mouse passar por cima do elemento*/ 
+.imagem:hover{
+   background-position: 0px 50px; /*movimenta o elemento 0px na 
+   horizontal e 50px na vertical*/ 
+}
+/*quando o elemento é clicado e segurado, se apenas clicar vai pro link indicado no arquivo html*/ 
+.imagem:active{
+    background-position: 5px 50px; /*movimenta o elemento 0px na 
+    horizontal e 50px na vertical*/ 
+ }
+

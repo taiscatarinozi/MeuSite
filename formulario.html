@@ -1,0 +1,53 @@
+<!--Crie um Formulario-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>PEDIDO DE PIZZA</h1>
+    <!-- o médoto GET envia os dados pelo link do navegador-->
+    <!--o método POST não mostra os dados no link-->
+    <form method="get" action="teste.jsp"> 
+        Name: <!--caixa de texto para inserir o nome-->
+        <input type="text" name="name"> <br> 
+        <br>
+        E-mail: <!--caixa de texto para inserir o e-mail, obriga a usar o formato de email-->
+        <input type="email" name="email"> <br> 
+        <br>
+        Tamanho: <!--dá opções das quais só pode marcar uma opção-->
+        <input type="radio" name="tamanho" value="G" checked> Grande <!--deixa esta opção marcada-->
+        <input type="radio" name="tamanho" value="M"> Média
+        <input type="radio" name="tamanho" value="P"> Pequena
+        <br><br>
+        Sabor:<!--cria uma caixa para selecionar a opção desejada-->
+        <select name="sabor">
+            <option>Calabresa</option>
+            <option>Portuguesa</option>
+            <option>Marguerita</option>
+            <option>Frango Catupiry</option>
+        </select>
+        <br><br>
+        Adicionais:<br> <!--cria caixas de check, pode ser marcada mais de uma-->
+        <input type="checkbox" name="queijo" value="sim"> Borda de queijo <br>
+        <input type="checkbox" name="chocolate" value="sim"> Borda de Chocolate <br>
+        <input type="checkbox" name="semBorda" value="sim"> Sem Borda
+        <br>
+        <br>
+        Data Entrega:<!--abre um calendario para selecionar a data desejada-->
+        <input type="date" name="dataEntrega">
+        <br><br>
+        Comentário:
+        <br> 
+        <textarea name="mensagem" rows="10" cols="30"></textarea>
+        <br><br>
+        <input type="submit">
+
+        
+    </form>
+</body>
+</html>

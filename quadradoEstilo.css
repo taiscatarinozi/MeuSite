@@ -1,0 +1,36 @@
+/*Faça uma página na qual existam quadrados
+de cores distintas ocupando os quatro cantos
+da tela com um texto dentro*/
+
+/*cria um quadrado com bordar preta solida de 3 pixels de igual 
+tamanho de altura e largura*/
+.quadrado{
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: coral;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.quadrado1{
+    left: 0px;
+    top: 0px;
+    background-color:teal;
+    text-align: center;
+}
+.quadrado2{
+    right: 0px;
+    bottom: 0px;
+    background-color: red;
+}
+.quadrado3{
+    left: 0px;
+    bottom: 0px;
+    background-color: green;
+}
+.quadrado4{
+    right: 0px;
+    top: 0px;
+    background-color: blueviolet;
+}
